@@ -36,10 +36,17 @@ function entrar() {
     }
 }
 
+function contador() {
+
+const numero = document.getElementById("numero").value;
 const ulfor =document.createElement("ul");
-for(let i=0; i <=10 ;i ++) {
+
+for(let i=0; i <= numero ;i ++) {
      const lifor = document.createElement("li");
      lifor.textContent = "numero: " + i ;
-     divConteudo.appendChild(lifor); 
+     ulfor.appendChild(lifor);
 }
-divConteudo.appendChild(ulfor); 
+
+divConteudo.append(ulfor); 
+
+}
